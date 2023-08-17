@@ -26,7 +26,7 @@ public abstract class CrappyDiodeBlock extends DiodeBlock {
 	
 	@Override
 	public boolean canSurvive(BlockState state, LevelReader level, BlockPos pos) {
-		//In Forge this used to plug into IPlantable, but noone gives a shit about iplantable.
+		//In Forge this used to plug into IPlantable, but no one gives a shit about iplantable.
 		//Really awful interface to implement via mixin/xplat anyways.
 		//Maybe toss some more tags in here? (DIRT contains grass blocks, btw.)
 		BlockState soilState = level.getBlockState(pos.below());
